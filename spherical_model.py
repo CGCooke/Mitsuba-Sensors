@@ -10,7 +10,7 @@ def unit_angle_z(v):
     return dr.select(v.z >= 0, temp, dr.pi - temp)
 
 
-class SphericalCamera(mi.Sensor):
+class SphericalModel(mi.Sensor):
     """Defines a spherical sensor that is used for a figure"""
 
     def __init__(self, props=mi.Properties()):
@@ -70,7 +70,7 @@ class SphericalCamera(mi.Sensor):
 
 
 if __name__ == '__main__':
-    mi.register_sensor("spherical", lambda props: SphericalCamera(props))
+    mi.register_sensor("SphericalModel", lambda props: SphericalModel(props))
 
     film =  {
             'type': 'hdrfilm',
@@ -81,7 +81,7 @@ if __name__ == '__main__':
         }
 
     sensor = mi.load_dict({
-        'type' : 'spherical',
+        'type' : 'SphericalModel',
         'film' : film
     })
 

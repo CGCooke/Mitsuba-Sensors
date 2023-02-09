@@ -2,12 +2,9 @@ import mitsuba as mi
 import drjit as dr
 
 if __name__ == '__main__':
-    #mi.set_variant('scalar_rgb')
     mi.set_variant('llvm_ad_rgb')
 
 if __name__ == '__main__':
-    
-
     film =  {
             'type': 'hdrfilm',
             'width': 1500,

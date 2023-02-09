@@ -21,13 +21,13 @@ python spherical_sensor.py
 ```
 
 ## Models:
-1. pinhole_model.py
+1. *pinhole_model.py*
 * No Distortion is assumed.
 * Only focal length and principal point is modeled.
 ![](renders/pinhole_model.png)
 
 
-2. sphereical_model.py
+2. *spherical_model.py*
 * A spherical model
 * Credit to [Delio Vicini](https://dvicini.github.io/).
 * Please see [here](https://github.com/rgl-epfl/differentiable-sdf-rendering/blob/main/figures/spherical_sensor.py) for the orignal code.
