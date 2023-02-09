@@ -1,0 +1,7 @@
+name: Mitsuba-Sensors
+dependencies:
+  - python
+  - llvm
+  - pip
+  - pip:
+       - mitsuba
