@@ -99,6 +99,6 @@ if __name__ == '__main__':
 
     params = mi.traverse(scene)
     image = mi.render(scene, spp=256)
-    mi.util.write_bitmap("renders/spherical_sensor.png", image)
+    mi.util.write_bitmap("renders/spherical_model.png", image)
 
 

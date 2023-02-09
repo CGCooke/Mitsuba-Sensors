@@ -22,10 +22,15 @@ python spherical_sensor.py
 
 ## Models:
 
-1. sphereical_sensor.py
+1. sphereical_model.py
 A spherical model, credit to Delio Vicini.
 
 ![](renders/spherical_sensor.png)
+
+2. pinhole_model.py
+No Distortion is assumed. Only focal length and principal point is modeled.
+![](renders/pinhole_model.png)
+
 
 
 # Thanks to Delio Vicini for the inspiration and the template that I adapted.
@@ -34,3 +39,6 @@ https://github.com/rgl-epfl/differentiable-sdf-rendering/blob/main/figures/spher
 
 # EXR
 [This](https://polyhaven.com/a/dikhololo_night) is the EXR file used in the example scene.
+
+# See also
+[Scripting a renderer](https://mitsuba.readthedocs.io/en/stable/src/rendering/scripting_renderer.html)
